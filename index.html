@@ -40,14 +40,13 @@
     .about-img{height:430px;overflow:hidden;border-radius:2px 150px 2px 2px;background:#e8d9c9}.about-img img{width:100%;height:100%;object-fit:cover}
     .about-copy h2{font-size:54px;color:var(--wine);margin:12px 0 18px}.about-copy p{color:var(--muted)}
     .services{background:#f1e8dd}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .card{background:var(--paper);padding:30px 27px;border:1px solid var(--line);min-height:225px}
+    .card{background:var(--paper);padding:0 0 25px;border:1px solid var(--line);min-height:225px;overflow:hidden}.card img{width:100%;height:190px;object-fit:cover;display:block}.card .card-copy{padding:18px 25px 0}
     .card .num{font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--gold)}
     .card h3{font-size:30px;color:var(--wine);margin:9px 0}
     .card p{font-size:14px;color:var(--muted);margin:0}
-    .gallery-grid{display:grid;grid-template-columns:1.1fr .9fr 1fr;grid-template-rows:220px 220px;gap:14px}
+    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:260px;gap:14px}
     .gallery-grid img{width:100%;height:100%;object-fit:cover;background:#e8d9c9}
-    .gallery-grid img:first-child{grid-row:span 2}
-    .gallery-grid img:last-child{grid-column:2 / 4}
+    .gallery-grid img{border:1px solid var(--line);box-shadow:0 8px 24px #5b38251c}
     .quote{background:var(--wine);color:#fff8ef;text-align:center;padding:75px 20px}
     .quote h2{font-size:clamp(38px,5vw,58px);max-width:800px;margin:15px auto 20px}.quote p{color:#e8d7c9}
     .contact{background:#f1e8dd}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start}
@@ -59,7 +58,7 @@
     footer{background:#39282a;color:#e9ddd1;padding:28px 0;font-size:12px}
     footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
     .float{position:fixed;right:20px;bottom:20px;z-index:20;background:#238b55;color:white;padding:14px 19px;border-radius:30px;font-size:13px;font-weight:700;box-shadow:0 8px 24px #0002}
-    @media(max-width:800px){.navlinks{display:none}.hero{padding:48px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:32px}.hero-art{min-height:380px}.photo.one{height:330px}.photo.two{height:260px;margin-top:80px}.seal{width:90px;height:90px;font-size:15px}.cards{grid-template-columns:1fr}.gallery-grid{grid-template-rows:170px 170px;gap:8px}section{padding:65px 0}.about-img{height:330px}}
+    @media(max-width:800px){.navlinks{display:none}.hero{padding:48px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:32px}.hero-art{min-height:380px}.photo.one{height:330px}.photo.two{height:260px;margin-top:80px}.seal{width:90px;height:90px;font-size:15px}.cards{grid-template-columns:1fr}.gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:190px;gap:8px}section{padding:65px 0}.about-img{height:330px}}
   </style>
 </head>
 <body>
@@ -78,14 +77,14 @@
         <div class="actions"><a class="btn" href="https://wa.me/919673745981?text=Hello%20Mariam%2C%20I%27d%20like%20to%20book%20a%20consultation.">Enquire on WhatsApp</a><a class="btn outline" href="#services">Explore Services</a></div>
       </div>
       <div class="hero-art">
-        <div class="photo one"><img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Elegant wedding celebration"></div>
-        <div class="photo two"><img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=800&q=85" alt="Professional beauty makeup"></div>
+        <div class="photo one"><img src="assets/bridal-mehendi-portrait.webp" alt="Bridal mehendi portrait from Mariam Shaikh portfolio"></div>
+        <div class="photo two"><img src="assets/bridal-mehendi-hands-01.webp" alt="Close-up of bridal mehendi by Mariam Shaikh"></div>
         <div class="seal">Made with<br>love &<br>artistry</div>
       </div>
     </div></section>
 
     <section id="about"><div class="wrap about-grid">
-      <div class="about-img"><img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=85" alt="Beauty portrait"></div>
+      <div class="about-img"><img src="assets/about-us.webp" alt="Mariam Shaikh mehendi and makeover services"></div>
       <div class="about-copy"><div class="eyebrow">Meet your artist</div><h2>Beauty in every detail.</h2>
         <p>Welcome to Mariam Shaikh's world of mehendi and makeovers. From intricate henna details to polished occasion looks, every service is approached with care, creativity and attention to your personal style.</p>
         <p>Whether you're preparing for your wedding, engagement or a special celebration, let's create a look that feels beautifully you.</p>
@@ -96,22 +95,32 @@
     <section class="services" id="services"><div class="wrap">
       <div class="section-head"><div class="eyebrow">What we create</div><h2>Our Services</h2><p>Personalised beauty services for weddings, celebrations and unforgettable moments.</p></div>
       <div class="cards">
-        <article class="card"><div class="num">01</div><h3>Bridal Mehendi</h3><p>Beautiful bridal henna designs with intricate details for your wedding celebration.</p></article>
-        <article class="card"><div class="num">02</div><h3>Traditional & Arabic Mehendi</h3><p>Classic patterns, flowing Arabic motifs and elegant henna for every occasion.</p></article>
-        <article class="card"><div class="num">03</div><h3>Engagement & Party Mehendi</h3><p>Lovely mehendi designs for engagements, festivities and special gatherings.</p></article>
-        <article class="card"><div class="num">04</div><h3>Bridal Makeover</h3><p>A considered bridal look designed to complement your outfit, features and vision.</p></article>
-        <article class="card"><div class="num">05</div><h3>Party Makeover</h3><p>Professional occasion makeup for celebrations, events and memorable evenings.</p></article>
-        <article class="card"><div class="num">06</div><h3>Special Occasion Looks</h3><p>Beauty and makeover services for the moments you want to feel your best.</p></article>
+        <article class="card"><img src="assets/mehendi.webp" alt="Mehendi service"><div class="card-copy"><div class="num">01</div><h3>Mehendi</h3><p>Beautiful bridal henna designs with intricate details for your wedding celebration.</p></div></article>
+        <article class="card"><img src="assets/makeup.webp" alt="Makeup service"><div class="card-copy"><div class="num">02</div><h3>Makeup</h3><p>Professional bridal and occasion makeup for your special celebrations.</p></div></article>
+        <article class="card"><img src="assets/hairstyle.webp" alt="Hairstyling service"><div class="card-copy"><div class="num">03</div><h3>Hairstyle</h3><p>Elegant hairstyles and finishing touches to complete your look.</p></div></article>
+        <article class="card"><img src="assets/hijab-style.webp" alt="Hijab styling service"><div class="card-copy"><div class="num">04</div><h3>Hijab Style</h3><p>Beautiful hijab styling for bridal and special occasion looks.</p></div></article>
+        <article class="card"><img src="assets/saree-draping.webp" alt="Saree draping service"><div class="card-copy"><div class="num">05</div><h3>Saree Draping</h3><p>Neat, elegant saree draping for weddings and celebrations.</p></div></article>
+        <article class="card"><img src="assets/fashion-events.webp" alt="Fashion and event styling"><div class="card-copy"><div class="num">06</div><h3>Fashion Events</h3><p>Styling and makeover services for events and memorable occasions.</p></div></article>
       </div>
     </div></section>
 
     <section id="gallery"><div class="wrap">
-      <div class="section-head"><div class="eyebrow">A little inspiration</div><h2>Beauty & artistry</h2><p>Replace these sample photographs with Mariam's own mehendi and makeover portfolio before publishing.</p></div>
+      <div class="section-head"><div class="eyebrow">A little inspiration</div><h2>Beauty & artistry</h2><p>A selection of bridal mehendi, makeover and styling work.</p></div>
       <div class="gallery-grid">
-        <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=900&q=85" alt="Wedding inspiration">
-        <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&w=700&q=85" alt="Makeup inspiration">
-        <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=700&q=85" alt="Beauty portrait inspiration">
-        <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1000&q=85" alt="Wedding celebration inspiration">
+        <img src="assets/gallery-001.webp" alt="Mariam Shaikh mehendi and makeover portfolio 1">
+        <img src="assets/gallery-002.webp" alt="Mariam Shaikh mehendi and makeover portfolio 2">
+        <img src="assets/gallery-003.webp" alt="Mariam Shaikh mehendi and makeover portfolio 3">
+        <img src="assets/gallery-004.webp" alt="Mariam Shaikh mehendi and makeover portfolio 4">
+        <img src="assets/gallery-005.webp" alt="Mariam Shaikh mehendi and makeover portfolio 5">
+        <img src="assets/gallery-006.webp" alt="Mariam Shaikh mehendi and makeover portfolio 6">
+
+        <img src="assets/bridal-mehendi-portrait.webp" alt="Bridal portrait in lavender hijab with mehendi">
+        <img src="assets/bridal-mehendi-hands-01.webp" alt="Bridal mehendi design on both hands">
+        <img src="assets/bridal-mehendi-hands-02.webp" alt="Intricate bridal henna details">
+        <img src="assets/bridal-mehendi-hands-03.webp" alt="Bridal mehendi pose with decorated hands">
+        <img src="assets/bridal-mehendi-closeup.webp" alt="Close-up bridal henna with floral details">
+        <img src="assets/mariam-promo-poster-01.webp" alt="Mariam Shaikh services promotional design">
+        <img src="assets/mariam-promo-poster-02.webp" alt="Mariam Shaikh mehendi and makeover promotional design">
       </div>
     </div></section>
 
