@@ -13,18 +13,18 @@
     :root{--ivory:#faf6ef;--paper:#fffdf9;--wine:#632f37;--wine2:#854b50;--gold:#b18a56;--ink:#332827;--muted:#786b65;--line:#e9ded0}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ivory);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.65}
     a{color:inherit;text-decoration:none}.wrap{width:min(1160px,91%);margin:auto}
-    .top{padding:13px 0;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+    .top{padding:13px 0;border-bottom:1px solid var(--line);font-size:12px;letter-spacing:.12em;text-transform:capitalize;color:var(--muted)}
     .top .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
     header{background:rgba(250,246,239,.94);position:sticky;top:0;z-index:10;border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
     nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
     .brand{font-family:"Cormorant Garamond",serif;font-size:28px;font-weight:700;line-height:1;color:var(--wine);letter-spacing:.03em}
-    .brand small{display:block;font:10px "DM Sans",sans-serif;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-top:7px}
+    .brand small{display:block;font:10px "DM Sans",sans-serif;letter-spacing:.2em;text-transform:capitalize;color:var(--gold);margin-top:7px}
     .navlinks{display:flex;align-items:center;gap:25px;font-size:13px;color:#5e504b}.navlinks a:hover{color:var(--wine)}
-    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:2px;background:var(--wine);color:white;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;transition:.2s}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 22px;border-radius:2px;background:var(--wine);color:white;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:capitalize;transition:.2s}
     .btn:hover{background:var(--wine2);transform:translateY(-1px)}.btn.outline{background:transparent;border:1px solid var(--gold);color:var(--wine)}
     .hero{padding:72px 0 78px;background:radial-gradient(ellipse at 85% 20%,#ead9c7 0,transparent 36%),linear-gradient(120deg,#f8f2e9,#f3e8dc)}
     .hero-grid{display:grid;grid-template-columns:1.02fr .98fr;gap:58px;align-items:center}
-    .eyebrow{color:var(--gold);letter-spacing:.23em;text-transform:uppercase;font-size:11px;font-weight:700}
+    .eyebrow{color:var(--gold);letter-spacing:.23em;text-transform:capitalize;font-size:11px;font-weight:700}
     h1,h2,h3{font-family:"Cormorant Garamond",serif;font-weight:500;line-height:1.03}
     h1{font-size:clamp(52px,7vw,88px);color:var(--wine);margin:18px 0}
     h1 em{font-weight:400;color:var(--gold)}.hero p{max-width:500px;color:var(--muted);font-size:16px}
@@ -40,72 +40,71 @@
     .about-img{height:430px;overflow:hidden;border-radius:2px 150px 2px 2px;background:#e8d9c9}.about-img img{width:100%;height:100%;object-fit:cover}
     .about-copy h2{font-size:54px;color:var(--wine);margin:12px 0 18px}.about-copy p{color:var(--muted)}
     .services{background:#f1e8dd}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-    .card{background:var(--paper);padding:0 0 25px;border:1px solid var(--line);min-height:225px;overflow:hidden}.card img{width:100%;height:190px;object-fit:cover;display:block}.card .card-copy{padding:18px 25px 0}
+    .card{background:var(--paper);padding:0 0 25px;border:1px solid var(--line);overflow:hidden}.card img{width:100%;height:auto;aspect-ratio:1/1;object-fit:contain;display:block;background:#e8d9c9}.card .card-copy{padding:18px 25px 0}
     .card .num{font-family:"Cormorant Garamond",serif;font-size:34px;color:var(--gold)}
     .card h3{font-size:30px;color:var(--wine);margin:9px 0}
     .card p{font-size:14px;color:var(--muted);margin:0}
-    .gallery-grid{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:260px;gap:14px}
-    .gallery-grid img{width:100%;height:100%;object-fit:cover;background:#e8d9c9}
-    .gallery-grid img{border:1px solid var(--line);box-shadow:0 8px 24px #5b38251c}
+    .gallery-grid{columns:3 250px;column-gap:14px}
+    .gallery-grid img{width:100%;height:auto;display:block;object-fit:contain;background:#e8d9c9;break-inside:avoid;margin:0 0 14px;border:1px solid var(--line);box-shadow:0 8px 24px #5b38251c}
     .quote{background:var(--wine);color:#fff8ef;text-align:center;padding:75px 20px}
     .quote h2{font-size:clamp(38px,5vw,58px);max-width:800px;margin:15px auto 20px}.quote p{color:#e8d7c9}
     .contact{background:#f1e8dd}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:start}
     .contact h2{font-size:55px;color:var(--wine);margin:12px 0}.contact p{color:var(--muted)}
     .contact-list{display:grid;gap:14px;margin:25px 0}.contact-item{padding:16px 18px;background:var(--paper);border:1px solid var(--line);font-size:14px}
-    .contact-item b{display:block;color:var(--gold);font-size:10px;letter-spacing:.15em;text-transform:uppercase;margin-bottom:3px}
+    .contact-item b{display:block;color:var(--gold);font-size:10px;letter-spacing:.15em;text-transform:capitalize;margin-bottom:3px}
     .contact-panel{padding:35px;background:var(--paper);border:1px solid var(--line)}
     .contact-panel h3{font-size:34px;color:var(--wine);margin:0 0 12px}.social{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
     footer{background:#39282a;color:#e9ddd1;padding:28px 0;font-size:12px}
     footer .wrap{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
     .float{position:fixed;right:20px;bottom:20px;z-index:20;background:#238b55;color:white;padding:14px 19px;border-radius:30px;font-size:13px;font-weight:700;box-shadow:0 8px 24px #0002}
-    @media(max-width:800px){.navlinks{display:none}.hero{padding:48px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:32px}.hero-art{min-height:380px}.photo.one{height:330px}.photo.two{height:260px;margin-top:80px}.seal{width:90px;height:90px;font-size:15px}.cards{grid-template-columns:1fr}.gallery-grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:190px;gap:8px}section{padding:65px 0}.about-img{height:330px}}
-  </style>
+    @media(max-width:800px){.navlinks{display:none}.hero{padding:48px 0}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:32px}.hero-art{min-height:380px}.photo.one{height:330px}.photo.two{height:260px;margin-top:80px}.seal{width:90px;height:90px;font-size:15px}.cards{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.card .card-copy{padding:14px 15px 0}.gallery-grid{columns:2;column-gap:8px}.gallery-grid img{margin-bottom:8px}section{padding:65px 0}.about-img{height:330px}}
+  @media(max-width:420px){.cards{grid-template-columns:1fr}.card img{aspect-ratio:1/1}.card .card-copy{padding:16px 18px 0}}\n  </style>
 </head>
 <body>
-  <div class="top"><div class="wrap"><span>Bridal Mehendi & Professional Makeover · Goa, India</span><span>By appointment · Enquire for bookings</span></div></div>
+  <div class="top"><div class="wrap"><span>Bridal Mehendi & Professional Makeover · Goa, India</span><span>By Appointment · Enquire For Bookings</span></div></div>
   <header><nav class="wrap">
     <a class="brand" href="#home">Mariam Shaikh<small>Mehendi · Makeover</small></a>
     <div class="navlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#contact">Contact</a></div>
-    <a class="btn" href="https://wa.me/919673745981?text=Hello%20Mariam%2C%20I%27d%20like%20to%20enquire%20about%20your%20services.">Book an Enquiry</a>
+    <a class="btn" href="https://wa.me/919673745981?text=Hello%20Mariam%2C%20I%27d%20like%20to%20enquire%20about%20your%20services.">Book An Enquiry</a>
   </nav></header>
 
   <main>
     <section class="hero" id="home"><div class="wrap hero-grid">
-      <div><div class="eyebrow">Beauty, artistry & celebration</div>
-        <h1>Every bride<br>deserves to feel <em>beautiful.</em></h1>
-        <p>Thoughtful mehendi artistry and professional makeover services for your most special moments. Bringing your bridal vision to life in Goa.</p>
-        <div class="actions"><a class="btn" href="https://wa.me/919673745981?text=Hello%20Mariam%2C%20I%27d%20like%20to%20book%20a%20consultation.">Enquire on WhatsApp</a><a class="btn outline" href="#services">Explore Services</a></div>
+      <div><div class="eyebrow">Beauty, Artistry & Celebration</div>
+        <h1>Every Bride<br>Deserves To Feel <em>Beautiful.</em></h1>
+        <p>Thoughtful Mehendi Artistry And Professional Makeover Services For Your Most Special Moments. Bringing Your Bridal Vision To Life In Goa.</p>
+        <div class="actions"><a class="btn" href="https://wa.me/919673745981?text=Hello%20Mariam%2C%20I%27d%20like%20to%20book%20a%20consultation.">Enquire On WhatsApp</a><a class="btn outline" href="#services">Explore Services</a></div>
       </div>
       <div class="hero-art">
         <div class="photo one"><img src="assets/bridal-mehendi-portrait.webp" alt="Bridal mehendi portrait from Mariam Shaikh portfolio"></div>
         <div class="photo two"><img src="assets/bridal-mehendi-hands-01.webp" alt="Close-up of bridal mehendi by Mariam Shaikh"></div>
-        <div class="seal">Made with<br>love &<br>artistry</div>
+        <div class="seal">Made With<br>Love &<br>Artistry</div>
       </div>
     </div></section>
 
     <section id="about"><div class="wrap about-grid">
       <div class="about-img"><img src="assets/about-us.webp" alt="Mariam Shaikh mehendi and makeover services"></div>
-      <div class="about-copy"><div class="eyebrow">Meet your artist</div><h2>Beauty in every detail.</h2>
-        <p>Welcome to Mariam Shaikh's world of mehendi and makeovers. From intricate henna details to polished occasion looks, every service is approached with care, creativity and attention to your personal style.</p>
-        <p>Whether you're preparing for your wedding, engagement or a special celebration, let's create a look that feels beautifully you.</p>
-        <a class="btn" href="#contact">Get in Touch</a>
+      <div class="about-copy"><div class="eyebrow">Meet Your Artist</div><h2>Beauty In Every Detail.</h2>
+        <p>Welcome To Mariam Shaikh's World Of Mehendi And Makeovers. From Intricate Henna Details To Polished Occasion Looks, Every Service Is Approached With Care, Creativity And Attention To Your Personal Style.</p>
+        <p>Whether You're Preparing For Your Wedding, Engagement Or A Special Celebration, Let's Create A Look That Feels Beautifully You.</p>
+        <a class="btn" href="#contact">Get In Touch</a>
       </div>
     </div></section>
 
     <section class="services" id="services"><div class="wrap">
-      <div class="section-head"><div class="eyebrow">What we create</div><h2>Our Services</h2><p>Personalised beauty services for weddings, celebrations and unforgettable moments.</p></div>
+      <div class="section-head"><div class="eyebrow">What We Create</div><h2>Our Services</h2><p>Personalised Beauty Services For Weddings, Celebrations And Unforgettable Moments.</p></div>
       <div class="cards">
-        <article class="card"><img src="assets/mehendi.webp" alt="Mehendi service"><div class="card-copy"><div class="num">01</div><h3>Mehendi</h3><p>Beautiful bridal henna designs with intricate details for your wedding celebration.</p></div></article>
-        <article class="card"><img src="assets/makeup.webp" alt="Makeup service"><div class="card-copy"><div class="num">02</div><h3>Makeup</h3><p>Professional bridal and occasion makeup for your special celebrations.</p></div></article>
-        <article class="card"><img src="assets/hairstyle.webp" alt="Hairstyling service"><div class="card-copy"><div class="num">03</div><h3>Hairstyle</h3><p>Elegant hairstyles and finishing touches to complete your look.</p></div></article>
-        <article class="card"><img src="assets/hijab-style.webp" alt="Hijab styling service"><div class="card-copy"><div class="num">04</div><h3>Hijab Style</h3><p>Beautiful hijab styling for bridal and special occasion looks.</p></div></article>
-        <article class="card"><img src="assets/saree-draping.webp" alt="Saree draping service"><div class="card-copy"><div class="num">05</div><h3>Saree Draping</h3><p>Neat, elegant saree draping for weddings and celebrations.</p></div></article>
-        <article class="card"><img src="assets/fashion-events.webp" alt="Fashion and event styling"><div class="card-copy"><div class="num">06</div><h3>Fashion Events</h3><p>Styling and makeover services for events and memorable occasions.</p></div></article>
+        <article class="card"><img src="assets/mehendi.webp" alt="Mehendi service"><div class="card-copy"><div class="num">01</div><h3>Mehendi</h3><p>Beautiful Bridal Henna Designs With Intricate Details For Your Wedding Celebration.</p></div></article>
+        <article class="card"><img src="assets/makeup.webp" alt="Makeup service"><div class="card-copy"><div class="num">02</div><h3>Makeup</h3><p>Professional Bridal And Occasion Makeup For Your Special Celebrations.</p></div></article>
+        <article class="card"><img src="assets/hairstyle.webp" alt="Hairstyling service"><div class="card-copy"><div class="num">03</div><h3>Hairstyle</h3><p>Elegant Hairstyles And Finishing Touches To Complete Your Look.</p></div></article>
+        <article class="card"><img src="assets/hijab-style.webp" alt="Hijab styling service"><div class="card-copy"><div class="num">04</div><h3>Hijab Style</h3><p>Beautiful Hijab Styling For Bridal And Special Occasion Looks.</p></div></article>
+        <article class="card"><img src="assets/saree-draping.webp" alt="Saree draping service"><div class="card-copy"><div class="num">05</div><h3>Saree Draping</h3><p>Neat, Elegant Saree Draping For Weddings And Celebrations.</p></div></article>
+        <article class="card"><img src="assets/fashion-events.webp" alt="Fashion and event styling"><div class="card-copy"><div class="num">06</div><h3>Fashion Events</h3><p>Styling And Makeover Services For Events And Memorable Occasions.</p></div></article>
       </div>
     </div></section>
 
     <section id="gallery"><div class="wrap">
-      <div class="section-head"><div class="eyebrow">A little inspiration</div><h2>Beauty & artistry</h2><p>A selection of bridal mehendi, makeover and styling work.</p></div>
+      <div class="section-head"><div class="eyebrow">A Little Inspiration</div><h2>Beauty & Artistry</h2><p>A Selection Of Bridal Mehendi, Makeover And Styling Work.</p></div>
       <div class="gallery-grid">
         <img src="assets/gallery-001.webp" alt="Mariam Shaikh mehendi and makeover portfolio 1">
         <img src="assets/gallery-002.webp" alt="Mariam Shaikh mehendi and makeover portfolio 2">
@@ -124,24 +123,24 @@
       </div>
     </div></section>
 
-    <div class="quote"><div class="eyebrow">Your day, your beauty</div><h2>“The little details make your most beautiful memories.”</h2><p>Let's plan your bridal mehendi or makeover in Goa.</p><a class="btn outline" href="https://wa.me/919673745981">Start a Conversation</a></div>
+    <div class="quote"><div class="eyebrow">Your Day, Your Beauty</div><h2>“The Little Details Make Your Most Beautiful Memories.”</h2><p>Let's Plan Your Bridal Mehendi Or Makeover In Goa.</p><a class="btn outline" href="https://wa.me/919673745981">Start A Conversation</a></div>
 
     <section class="contact" id="contact"><div class="wrap contact-grid">
-      <div><div class="eyebrow">Let's make it memorable</div><h2>Let's talk about your day.</h2><p>For bookings, availability and service enquiries, get in touch directly. Share your event date and the service you're interested in.</p>
+      <div><div class="eyebrow">Let's Make It Memorable</div><h2>Let's Talk About Your Day.</h2><p>For Bookings, Availability And Service Enquiries, Get In Touch Directly. Share Your Event Date And The Service You're Interested In.</p>
         <div class="contact-list">
           <a class="contact-item" href="tel:+919673745981"><b>Call / WhatsApp</b>+91 96737 45981</a>
           <a class="contact-item" href="mailto:maryammehendimakeover@gmail.com"><b>Email</b>maryammehendimakeover@gmail.com</a>
-          <div class="contact-item"><b>Location</b>Goa, India · Enquire for availability</div>
+          <div class="contact-item"><b>Location</b>Goa, India · Enquire For Availability</div>
         </div>
       </div>
-      <div class="contact-panel"><h3>Ready to book?</h3><p>Send a message with your event date, venue and the service you need. Mariam can help you with the next steps.</p>
-        <a class="btn" href="https://wa.me/919673745981?text=Hello%20Mariam%2C%20my%20event%20date%20is%20____.%20I%27m%20interested%20in%20____.">Message on WhatsApp</a>
+      <div class="contact-panel"><h3>Ready To Book?</h3><p>Send A Message With Your Event Date, Venue And The Service You Need. Mariam Can Help You With The Next Steps.</p>
+        <a class="btn" href="https://wa.me/919673745981?text=Hello%20Mariam%2C%20my%20event%20date%20is%20____.%20I%27m%20interested%20in%20____.">Message On WhatsApp</a>
         <div class="social"><a class="btn outline" href="https://www.instagram.com/makeoverbymaryamshaikh/" target="_blank" rel="noopener">Makeover Instagram</a><a class="btn outline" href="https://www.instagram.com/mehendibymaryam/" target="_blank" rel="noopener">Mehendi Instagram</a></div>
         <p style="font-size:12px;margin-top:25px">Email: maryammehendimakeover@gmail.com</p>
       </div>
     </div></section>
   </main>
-  <footer><div class="wrap"><span>© <span id="year"></span> Mariam Shaikh · Mehendi & Makeover</span><span>Made for beautiful beginnings · Goa, India</span><span><a href="https://mehendibymaryam.in">mehendibymaryam.in</a></span></div></footer>
+  <footer><div class="wrap"><span>© <span id="year"></span> Mariam Shaikh · Mehendi & Makeover</span><span>Made For Beautiful Beginnings · Goa, India</span><span><a href="https://mehendibymaryam.in">mehendibymaryam.in</a></span></div></footer>
   <a class="float" href="https://wa.me/919673745981?text=Hello%20Mariam%2C%20I%27d%20like%20to%20enquire.">WhatsApp Booking</a>
   <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
 </body>
